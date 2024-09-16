@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>PetD Sound Heart</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+     .layer{
+      position: absolute;
+      background-color: black;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+  </style>
+</head>
+<body>
+<div class="layer">
+  <button id="play" >click</button>
+</div>
+<!-- partial:index.partial.html -->
+<canvas id="heart"></canvas>
+<audio hidden id="audio" controls>
+  <source src="./1.mp3" type="audio/mpeg">
+</audio>
+<!-- partial -->
+<script  src="./script.js"></script>
+
+</body>
+</html>
